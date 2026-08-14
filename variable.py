@@ -43,12 +43,41 @@ y = False #0
 #None
 z = None
 
-print(isinstance(x,bool)) #Data, DataType -> Boolean(True/False)
+# print(isinstance(x,bool)) #Data, DataType -> Boolean(True/False)
 
 number = "10"
 new_number = int(number)
 c_number = complex(new_number)
-print(c_number)
-print(isinstance(True, int))
-print(bool([1,2,3]))
+# print(c_number)
+# print(isinstance(True, int))
+# print(bool([1,2,3]))
 
+
+
+num = 2 +(-7J)
+
+print(type(num))
+print(num.real)
+print(num.imag)
+
+print(int(num.real))
+print(int(num.imag))
+
+print(complex(5,8))
+print(num.conjugate())
+print(num.__abs__()) 
+
+
+def count():
+    print(15)
+    
+    
+# count()
+
+"""
+1. python code
+2. cpython
+3. bytecode -> machine code
+4. Python virtual machine
+5. stop
+"""
