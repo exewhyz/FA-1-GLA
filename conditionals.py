@@ -59,3 +59,20 @@ match choice:
         print("Exit")
     case _:
         print("Provide valid choice")
+        
+match "Bye":
+    case "Hello":
+        print("Hello")
+    case "Hi":
+        print("Hi")
+    case "Bye":
+        print("Bye")
+    case _:
+        print("Provide valid choice")
+        
+        
+match 30==30:
+    case True:
+        print("True")
+    case False:
+        print("False")
