@@ -114,9 +114,62 @@ m.sort(key=hello)
 # [0 ,3,0,5,0,7,0,9,0,11]
 # [0,0,0,0,0,3,5,7,9,11]
 # [1,3,5,7,9,2,4,6,8,10]
-print(m)
+# print(m)
 
 
 # v = [12,10,True,"Aniket", -1 ,False,0]
 # v.sort()
 # print(v)
+
+
+# p = [1,2,3]
+# extend(iterable) -> None => adds multiple values at the end
+# p.append([4,5,6])
+# p.extend([4,5,6])
+# print(p)
+
+# Wrong property for str
+# u = "hello"
+# u.extend("world")
+# print(u)
+
+"""
+Direct Built In Methods/Functions
+1. max(iterable) -> depends on type of data in list
+2. min(iterable) -> depends on type of data in list
+3. sum 
+"""
+
+# print("Max of List",max([7,1,9,8,2]))
+# print("Min of List",min([7,1,9,8,2]))
+# print("Max of Str",max("hello"))
+# print("Min of Str",min("hello"))
+# print("Max of Tuple",max((1,2,3)))
+# print("Min of Tuple",min((1,2,3)))
+
+
+#Slicing => provides part of iterable(str,list,tuple)
+
+# start:end:step
+
+words = ["hello", "how", "are", "you", "?"]
+
+# print(words[1:]) # without end value (end will be len(list))
+# print(words[:3]) # without start value (start will be 0)
+# print(words[:]) # without start and end values (start = 0 and end = len(list))
+
+# print(words[::2])
+
+numbers = [10,5,6,7,8,2,1,3,4,9]
+numbers.sort(reverse=True) # [10,9,8,7,6,5,4,3,2,1]
+numbers = numbers[::-1] # [1,2,3,4,5,6,7,8,9,10]
+# options
+# print(numbers[0::2])
+# print(numbers[0:len(numbers):2])
+# print(numbers[0:len(numbers):1])
+# print(numbers[1::2]) # [2,4,6,8,10]
+
+
+j = [1,2,3,4,5]
+
+print(j[3:0:-2])
