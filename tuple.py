@@ -40,5 +40,54 @@ g = "hello"
 f = (5, 3,6)
 
 # f.sort()
-print(sorted(f))
+# print(sorted(f))
 
+
+
+s = [1,2,3] #X0024
+# t = s #X0024 => copy both address and value
+t = s.copy() #X0025 => copy only value
+t.append(4)
+s.pop(1)
+# print("S", s)
+# print("T", t)
+
+
+# sum(list/tuple, start=0) -> int
+
+# u = (1,2,3)
+# u = (1,2,"a")
+# u = ("a","b","c")
+# u = (True, False,54)
+u = []
+sum_of_numbers = sum(u,start=-50)
+# print(sum_of_numbers)
+
+
+
+# take multiple numbers from single input statement and sum all.
+
+# numbers = input("Enter your numbers to add: ").split()
+# [ "1", "2", "3" ]
+# k = map(int, numbers)
+# print(list(k))
+
+
+# check the tuple is same from left and right side(palindrome)
+
+# m = (2, 5, 2)
+# m = tuple(input("enter values: ").split())
+# if m == m[::-1]:
+#     print("It is palindrome")
+# else:
+#     print("It is not palindrome")
+    
+# take input from user and verify otp using the following data
+otp = ("2", "4", "9", "7")
+## user_otp = tuple(input("enter the otp: ")) # without space
+# user_otp = tuple(input("enter the otp: ").split()) # with space
+
+# if otp == user_otp:
+#     print("OTP verified")
+# else:
+#     print("OTP not verified")
