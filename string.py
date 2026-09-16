@@ -115,12 +115,12 @@ str_name.method_name()
 # swapcase() => upper to lower and vice versa
 
 text = "hELlO hOw arE You?"
-print("OG:",text)
-print("LOWER:",text.lower())
-print("UPPER:",text.upper())
-print("CAPITALIZE:", text.capitalize())
-print("TITLE:", text.title())
-print("SWAPCASE:", text.swapcase())
+# print("OG:",text)
+# print("LOWER:",text.lower())
+# print("UPPER:",text.upper())
+# print("CAPITALIZE:", text.capitalize())
+# print("TITLE:", text.title())
+# print("SWAPCASE:", text.swapcase())
 
 # startswith(value) -> bool => true if string starts with given value
 
@@ -138,7 +138,53 @@ text2 = "python programming"
 # isalnum() -> bool => True if str has both numbers and alphabets
 # isspace() -> bool => True if str has only spaces
 
-print("hello".isalpha())
-print("15462".isdigit())
-print("hello1y65".isalnum())
-print("    ".isspace())
+# print("hello".isalpha())
+# print("15462".isdigit())
+# print("hello1y65".isalnum())
+# print("    ".isspace())
+
+
+# text3 = "python programming"
+# print(text3.startswith(("p","P","y"),1)) # y to g
+# print(text3.endswith(("g","G","n"),1,-1)) # y to n
+
+
+
+# strip() => remove left and right spaces
+# lstrip() => remove left spaces
+# rstrip() => remove right spaces
+
+# text4 = "    !!!python programming!!!    "
+
+# print("STRIP:",text4.strip("! "))
+# print("LSTRIP:",text4.lstrip())
+# print("RSTRIP:",text4.rstrip())
+
+
+# split() => converts string to list
+# join() => converts list to string
+
+# split(sep=" ",maxsplit=-1) -> list
+
+# text5 = "1 2 3 4 5 6 7 8 9 10"
+# text5 = "hello how are you"
+
+# print(text5)
+# print(text5.split(" ",2))
+
+# join(list) -> str
+
+# items = ["Apple", "Pencil", "Book"]
+
+# print("".join(items))
+
+# count number of letters in given string excluding space
+
+x = "I like Python"
+# total_length = len(x)
+# total_spaces = x.count(" ")
+# total_letters = total_length - total_spaces
+
+words = x.split()
+x_without_space = "".join(words)
+print(len(x_without_space))
