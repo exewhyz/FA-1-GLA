@@ -65,7 +65,81 @@ for value_name in str/list/tuple_name:
 # for value in range(2,101,2):
 #     print(value)
     
-for ch in "hello":
-    print(ch)
+# for ch in "hello":
+    # print(ch)
     
 # write a program to check if student got less than 50 marks in any of the subjects.
+# marks = ()
+# ispass = True
+
+# for m in marks:
+#     if m < 50:
+#         ispass = False
+
+# if ispass and len(marks) > 0:
+#     print("Student is pass in all subjects")
+# else:
+#     print("Student is fail")
+
+nums = [1,2,3,4,5,6]
+# nums = map(float, input().split(" "))
+
+# for number in nums:
+#     if number > 50:
+#         print("Greater than 50")
+#     else:
+#         print("Less than 50")
+
+
+
+prices = [99, 199, 599, 999, 499, 699, 299]
+
+
+# print(sum(prices))
+# promo_code = 10
+# total = 0
+
+# for p in prices:
+#     if p >= 200:
+#         total = total + p - 0.1 * p
+#     total = total + p
+
+# print(total)
+
+
+
+
+# # print(max(prices))
+
+# maximum = prices[0]
+# for p in prices:
+#     if p > maximum:
+#         maximum = p
+        
+# print(maximum)
+
+
+# calculate the total after multiplying numbers starting from 1 to 100 (including 100)
+# Factorial of 100?
+
+# total = 1
+# for n in range(1,6):
+#     total = total * n
+
+# print(total)
+
+# c = [1,2,3,4,5]
+# reversed_list = []
+# for v in c:
+#     reversed_list.insert(0,v)
+# print(reversed_list)
+
+# count of vowels in a string
+
+vowels = "aeiou"
+text = input("enter your text: ").strip().lower()
+count = 0
+for ch in text:
+    if ch in vowels:
+        count += 1
+print(count)
