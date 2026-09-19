@@ -136,10 +136,54 @@ prices = [99, 199, 599, 999, 499, 699, 299]
 
 # count of vowels in a string
 
-vowels = "aeiou"
-text = input("enter your text: ").strip().lower()
-count = 0
-for ch in text:
-    if ch in vowels:
-        count += 1
-print(count)
+# vowels = "aeiou"
+# text = input("enter your text: ").strip().lower()
+# count = 0
+# for ch in text:
+#     if ch in vowels:
+#         count += 1
+# print(count)
+
+
+# count and print all prime numbers from 1 to 20
+
+
+# check if a number is prime or not
+
+# n = int(input("Enter a number: "))
+
+# if n < 2:
+#     print("Not prime")
+# else:
+#     isprime = True
+#     for num in range(2,n):
+#         if n % num == 0:
+#             isprime = False
+#     if isprime:
+#         print("Prime")
+#     else:    
+#         print("Not Prime")
+
+
+# break, continue and pass
+
+# break -> stops the execution of loop
+
+
+# for i in range(1, 10):
+#     if i == 7:
+#         break
+#     print(i)
+    
+    
+# for i in range(1,10):
+#     print(i)
+#     if i == 5:
+#         continue
+    
+
+# for i in range(1,10):
+#     if i == 5:
+#         print("Before pass")
+#         pass
+#     print(i)
