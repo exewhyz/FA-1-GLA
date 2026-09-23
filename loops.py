@@ -187,3 +187,61 @@ prices = [99, 199, 599, 999, 499, 699, 299]
 #         print("Before pass")
 #         pass
 #     print(i)
+
+
+status = False
+while not status: # while True
+    status= True
+    print("You are hacked")
+
+# f = 1 
+# for n in range(1,5):
+#     f = f * n
+# print(f)
+
+# fac = 1
+# n = 4
+# while n > 0:
+#     fac = fac * n
+#     n = n - 1
+
+
+isprime = True
+number = 5
+
+if number < 2:
+    isprime = False
+
+for n in range(2, 5):
+    if number % n == 0:
+        isprime = False
+
+if isprime:
+    print("Prime")
+else:
+    print("not prime")
+    
+    
+x = 153
+total = 0
+y = x
+while y > 0:
+    digit = y % 10
+    total = total + digit ** len(str(x))
+    y = y // 10
+# total = 1 ** 3 + 2 ** 3 + 3 ** 3
+if  total == x:
+    print("Amstrong Number")
+else:
+    print("Not Amstrong Number")
+    
+    
+x = 153
+total = 0
+for ch in str(x):
+    total = total + int(ch) ** len(str(x))
+    
+if total == x:
+    print("Amstrong Number")
+else:
+    print("Not Amstrong Number")
