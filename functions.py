@@ -87,4 +87,97 @@ def create_user(name,email,password):
 def filter_unique_value(dup_list:list | tuple | str| set):
     return list(set(dup_list))
 
-filter_unique_value([20,10,10,40])
+# filter_unique_value([20,10,10,40])
+
+
+# # local and global scope
+
+# x = 10 # global variable
+
+# def check_x():
+#     global x
+#     x = 20 # local variable
+#     print("in:",x)
+# print("out:",x)
+# check_x()
+
+# *args and **kwargs
+
+# def avg(a,b,c):
+#     return (a+b+c)/3
+def avg(*nums):
+    print(type(nums))
+    print(sum(nums)/len(nums))
+
+# avg(1,2,3,4,5,6)
+# avg(1)
+# avg(2,3)
+# avg(2,3,5)
+
+# * - tuple
+# ** - dict
+
+def summary(event_name,*contri, **leader_details):
+    print("Event Name:", event_name)
+    print("Amount Collected:", sum(contri))
+    print("Avg Amount Collected:", sum(contri)/len(contri))
+    print("Number of person:", len(contri))
+    
+    print("Leader Deatils:")
+    for key,value in list(leader_details.items()):
+        print(f"{key} : {value}")
+        
+# summary("Class Bday",10,5,21,6,name="Aryan",email="aryan@gla.in")
+
+
+# lambda function
+
+def add_two(a,b):
+    return a+b
+
+# lambda parameters : statement
+lambda a,b : a+b
+
+def test(a):
+    return float(a)
+
+
+# sorted([4,2,1,6],key=lambda a : float(a))
+
+data = [("Ayush", 10),("Mayank", 5),("Karan", 15)]
+
+# def filter_number(details):
+#     return details[1]
+
+# print(sorted(data,key=filter_number))
+# print(sorted(data,key=lambda d : d[1]))
+
+# hof - function accepts function as an argument
+# callback - function as an argument
+
+def plus(a,b):
+    return a+b
+
+def minus(a,b):
+    return a-b
+
+def multiply(a,b):
+    return a*b
+
+def perform_operation(a,b,op):
+    print(op(a,b))
+    
+# perform_operation(10,20,plus)
+# perform_operation(10,20,minus)
+# perform_operation(10,20,multiply)
+
+def greet():
+    print("hello")
+    
+x = greet()
+# x()
+print(x)
+
+# map(callback,iterable) -> map
+print(list(map( lambda c : c.upper() ,["abc", "def"])))
+# filter()
