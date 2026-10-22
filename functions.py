@@ -174,10 +174,28 @@ def perform_operation(a,b,op):
 def greet():
     print("hello")
     
-x = greet()
+# x = greet()
 # x()
-print(x)
+# print(x)
 
 # map(callback,iterable) -> map
-print(list(map( lambda c : c.upper() ,["abc", "def"])))
-# filter()
+# print(list(map( lambda c : c.upper() ,["abc", "def"])))
+
+# nums = input("enter 3 values: ").split()
+# new_nums = list(map(int, nums))
+# new_nums = list(map(int, input("enter 3 values: ").split()))
+# print(type(new_nums))
+# print(new_nums)
+
+# filter(callback,iterable) -> filter
+
+# map_callback => operation
+# filter_callback => filtering condition
+
+data = [4,2,1,5,9,8]
+
+# for n in data:
+#     if n % 2 == 0:
+#         print(n)
+        
+print(list(filter(lambda n : n % 2 == 0,data)))
