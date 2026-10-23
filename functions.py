@@ -199,3 +199,30 @@ data = [4,2,1,5,9,8]
 #         print(n)
         
 print(list(filter(lambda n : n % 2 == 0,data)))
+
+
+
+# map, filter and reduce
+
+# map(callback,iterable) -> map
+# filter(callback,iterable) -> filter
+
+# iterable - str,list,tuple,dict,set,range,frozenset
+
+d = [4,2,1,5,9,8]
+
+# for n in d:
+#     d[d.index(n)] = n * 2
+
+print("before",d)
+d = list(map(lambda n : n*2, d))
+
+# even = []
+# for n in d:
+#     if n%2 == 0:
+#         even.append(n)
+
+even = list(filter(lambda n : n>7, d))
+
+print("after",d)
+print(even)
