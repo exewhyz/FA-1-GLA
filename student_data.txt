@@ -1,0 +1,8 @@
+Piyush: 37
+Ayush: 68
+Ariz: 10
+Sandy: 0
+Deepika: 2
+Moksha: 4
+Maitri: 1
+Aniket: 99
